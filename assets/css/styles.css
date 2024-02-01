@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    background: url("/assets/img/imgadivinancy/13.png") center center/ cover;
 }
 
 select {
