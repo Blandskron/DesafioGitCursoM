@@ -5,3 +5,6 @@
 /* Quien trabaje con el body debe usar el archivo by_newpost.css #/
 /* Quien trabaje con el sidebar debe usar el archivo sb_newpost.css #/
 /* Por favor ajuste su trabajo a las definiciones en regadas */
+.menu{
+    background-color: #ff66c4;
+}
