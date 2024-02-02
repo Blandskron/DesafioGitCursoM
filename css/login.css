@@ -1,5 +1,5 @@
 body {
-    background-image: url('../img/fondo.jpg'); /* Cambia 'tu-imagen-de-fondo.jpg' por la URL de tu imagen de fondo */
+    background-image: url('../img/12.png');  
     background-size: cover;
     margin: 0;
     display: flex;
@@ -10,8 +10,8 @@ body {
 }
 
 .login-container {
-    background: rgba(255, 255, 255, 0.7); /* Fondo transparente del cuadro de login */
-    border: 2px dashed #fff; /* Borde segmentado blanco */
+    background: rgba(44, 43, 43, 0.5); /* Fondo transparente del cuadro de login */
+    border: 1px dashed #fff; /* Borde segmentado blanco */
     padding: 20px;
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
@@ -24,6 +24,9 @@ body {
     display: block;
     margin-bottom: 15px;
 }
+.login-container h1, h2{
+    color:rgb(53, 50, 50);
+}  
 
 .login-container input {
     width: 100%;
@@ -37,9 +40,21 @@ body {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background-color: #4CAF50;
+    background-color: #4c4eaf;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
+.form-check{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.checkbox-label{
+    margin-left: 3px;
+    font-size: 10px;
+}
+
