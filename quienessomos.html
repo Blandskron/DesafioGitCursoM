@@ -6,59 +6,67 @@
     <title>Adivinancy</title>
     <link rel="icon" href="img/adivinancylogo.png">
     <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
-    
+
 </head>
 <body>
 
   <!--Camila-->
-    <header>
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-                <img src="img/adivinancylogo.png" alt="logo">
-            </div>
-            <div>
-                <img src="img/logo.png" alt="letralogo">
-            </div>
-            
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-            </div>
-        </div>
-        
-    </section>
 
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid" style="background-color: #ff68c5;">
+      <div class="log&brand" style="display: flex; align-items: center;">
+        <img src="Assets/img/adivinancylogo.png" width="280px">
+        <img src="Assets/img/logoletras2.png" width="280px"
+      </div>
+      <div class="buttonburger">
+        <button id="molestia"class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="color: white;">
+          <span class="navbar-toggler-icon" style="filter:brightness(100%)!important"></span>
+        </button>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NEW POST</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">QUIENES SOMOS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">SUGERENCIAS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ALGUNA IDEA</a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">ALGO MÁS, QUE DECIR</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+               
+   
     <!--Janeth-->
     <footer>
       <div>
-        <img src="img/adivinancylogo.png" alt="logo">
+        <img src="Assets/img/adivinancylogo.png" alt="logo">
       </div>
       <div>
-        <img src="img/logoletras2.png" alt="logoletras">
+        <img src="Assets/img/logoletras2.png" alt="logoletras">
       </div>
       <div>
         <h2> SANTIAGO, CHILE</h2>
