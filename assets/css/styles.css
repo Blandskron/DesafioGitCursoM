@@ -1,0 +1,54 @@
+#rectangulo {
+    width: 65%;
+    height: 200px;
+    background-color: rgb(253, 252, 252);
+    border-radius: 2ch;
+    border-style: double;
+    padding-left: 10px;
+}
+#titulo {
+    font-size: 24px;
+    text-align: left;
+    padding-top: 10px;
+    color:blue
+}
+#pregunta {
+    font-size: 18px;
+    text-align: left;
+    color: blue
+}
+#boton {
+    display: block;
+    margin:  0 auto;
+    margin-top: 20px;
+    
+}
+
+
+#contenedor{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+
+#respuestas{
+    width:90%;
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom: 600;
+
+
+}
+
+.borde {
+    border: 5px double black;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

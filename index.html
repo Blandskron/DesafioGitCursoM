@@ -1,96 +1,55 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Mi parte Eduardo...</title>
-    <style>
-        #rectangulo {
-            width: 65%;
-            height: 200px;
-            background-color: rgb(253, 252, 252);
-            border-radius: 2ch;
-            border-style: double;
-            padding-left: 10px;
-        }
-        #titulo {
-            font-size: 24px;
-            text-align: left;
-            padding-top: 10px;
-            color:blue
-        }
-        #pregunta {
-            font-size: 18px;
-            text-align: left;
-            color: blue
-        }
-        #boton {
-            display: block;
-            margin:  0 auto;
-            margin-top: 20px;
-            
-        }
-
-
-        #contenedor{
-            width: 80%;
-            display: flex;
-            justify-content: flex-end;
-
-
-        }
-
-
-        #respuestas{
-            width:90%;
-            display:flex;
-            justify-content:flex-end;
-            margin-bottom: 600;
-
-
-        }
-        
-    </style>
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
+
 <body>
-    <div id="rectangulo">
-        <h1 id="titulo">ADIVINANZA</h1>
-        <p id="pregunta">¿CUAL ES EL INSTRUMENTO QUE SE METE SECO Y SE SACA MOJADO?</p>
-       
-        <input type="respuesta1" class="respuesta1" id="su respuesta...." aria-describedby="RESPUESTA"> 
-
-        <div id="contenedor">
-            <button id="boton" onclick="mostrarTexto()">RESPUESTA</button>
-            <p id="texto_oculto" style="display: none;">el traje de buzo. </p>
+    <div class="borde">
+        <div id="rectangulo">
+            <h1 id="titulo">ADIVINANZA</h1>
+            <p id="pregunta">¿CUAL ES EL INSTRUMENTO QUE SE METE SECO Y SE SACA MOJADO?</p>
+    
+            <input type="respuesta1" class="respuesta1" id="su respuesta...." aria-describedby="RESPUESTA">
+    
+            <div id="contenedor">
+                <button id="boton" onclick="mostrarTexto()">RESPUESTA</button>
+                <p id="texto_oculto" style="display: none;">el traje de buzo. </p>
+            </div>
         </div>
-     </div>
-    <br>
-    <br>
-
-    <div id="rectangulo">
-        <h1 id="titulo">ADIVINANZA</h1>
-        <p id="pregunta">¿CUANTAS VECES EN LA VIDA SE ENAMORA UN PINGUINO ?</p>
-        <input type="respuesta1" class="respuesta1" id="su respuesta...." aria-describedby="Rectangulo"> 
-
-        <div id="contenedor">
-
-            <button id="boton" onclick="mostrarTexto1()">RESPUESTA</button>
-            <p id="texto_oculto1" style="display: none;">Solo se enamora una vez en la vida, aunque enviude no busca nueva pareja.</p>
+        <br>
+        <br>
+    
+        <div id="rectangulo">
+            <h1 id="titulo">ADIVINANZA</h1>
+            <p id="pregunta">¿CUANTAS VECES EN LA VIDA SE ENAMORA UN PINGUINO ?</p>
+            <input type="respuesta1" class="respuesta1" id="su respuesta...." aria-describedby="Rectangulo">
+    
+            <div id="contenedor">
+    
+                <button id="boton" onclick="mostrarTexto1()">RESPUESTA</button>
+                <p id="texto_oculto1" style="display: none;">Solo se enamora una vez en la vida, aunque enviude no busca
+                    nueva pareja.</p>
+            </div>
+    
         </div>
-
     </div>
+    
 
 
     <script>
         function mostrarTexto() {
-            
+
             document.getElementById("texto_oculto").style.display = "block";
         }
 
         function mostrarTexto1() {
-        
-                
+
+
             document.getElementById("texto_oculto1").style.display = "block";
-                
+
 
         }
 
@@ -98,6 +57,5 @@
     </script>
 
 </body>
+
 </html>
-
-
