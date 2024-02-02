@@ -1,0 +1,75 @@
+/* Usar el archivo de advinansy.pdf para imagenes y colores */
+/* No usar colores no definidos en el documento */
+/* Cada uni debe trabajar con su propio archivo css, siguiento la siguiente norma: */
+/* Quien trabaje con el header y footer debe usar el archivo hf_newpost.css #/
+/* Quien trabaje con el body debe usar el archivo by_newpost.css #/
+/* Quien trabaje con el sidebar debe usar el archivo sb_newpost.css #/
+/* Por favor ajuste su trabajo a las definiciones en regadas */
+
+body{
+    display: flex;
+    margin: 0%;
+    
+  }  
+ 
+.aside-newpost{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #A4F8FC;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding-top: 10px;
+}
+
+#name-user{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #FF66C4;
+
+}
+
+#div-estrellas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.estrellas{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+#sec-amigos{
+    color: #5E17EB;
+}
+
+.lista-amigos{
+    list-style: none;
+    text-align: start;
+    padding: 3px;
+}
+
+#li-1{
+    background-color:coral;
+    border-radius: 8px;
+}
+
+#li-2{
+    background-color:goldenrod;
+    border-radius: 8px;
+}
+
+#li-3{
+    background-color:dodgerblue;
+    border-radius: 8px;
+}
+
+#li-4{
+    background-color:aquamarine;
+    border-radius: 8px;
+}
