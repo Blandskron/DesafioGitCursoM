@@ -7,4 +7,8 @@
 /* Por favor ajuste su trabajo a las definiciones en regadas */
 .menu{
     background-color: #ff66c4;
+    height:  100px;
+}
+.navbar-toggler{
+justify-content: end;
 }
