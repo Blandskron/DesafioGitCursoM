@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Transparente</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-xBn8pL/yZbO1w2vOXsBimt5gMGCNoWw/5aI2XU+LBVvV8MQ98UwTJs3ZqLxDeK9adAkv0t+YkI5XaG5XyJxR5A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <div class="login-container">
+        <h1> <img src="img/login.png"></h1>
+            <form>
+                <label for="username"></label>
+                <input type="text" id="username" name="username" required placeholder="USUARIO">
+                <label for="password"></label>
+                <input type="password" id="password" name="password" required placeholder="CONTRASEÑA">
+                <input type="button" value="Iniciar Sesión" onclick="checkLogin()">
+                <!--       <button type="submit">Iniciar Sesión</button> -->
+                <div class="form-check" style="display: inline-block;">
+                    <input type="checkbox" id="miCheckbox">
+                    <label for="miCheckbox" class="checkbox-label">Recuerdame</label>
+                </div>
+
+                <h7 style="font-size: 12px;"><a href="https://www.google.cl/?hl=es">¿Olvidaste tu contraseña?</a></h7>
+
+            </form>
+    </div>
+
+    <script>
+        function checkLogin() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var users = JSON.parse(xhr.responseText);
+
+                    var userExists = users.some(function (user) {
+                        return user.username === username && user.password === password;
+                    });
+
+                    if (userExists) {
+                        localStorage.setItem("isLoggedIn", "true");
+                        window.location.href = 'welcome.html';
+                    } else {
+                        alert('Nombre de usuario o contraseña incorrecta');
+                        localStorage.setItem("isLoggedIn", "false");
+                    }
+                }
+            };
+            xhr.open("GET", "users.json", true);
+            xhr.send();
+        }
+    </script>
+
 </body>
+
 </html>

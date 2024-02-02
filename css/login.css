@@ -1,0 +1,60 @@
+body {
+    background-image: url('../img/12.png');  
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background: rgba(44, 43, 43, 0.5); /* Fondo transparente del cuadro de login */
+    border: 1px dashed #fff; /* Borde segmentado blanco */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+    width: 70%; /* Ancho del cuadro de login */
+    max-width: 400px; /* Máximo ancho del cuadro de login */
+    text-align: center;
+}
+
+.login-container label, .login-container input {
+    display: block;
+    margin-bottom: 15px;
+}
+.login-container h1, h2{
+    color:rgb(53, 50, 50);
+}  
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #4c4eaf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-check{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.checkbox-label{
+    margin-left: 3px;
+    font-size: 10px;
+}
+
