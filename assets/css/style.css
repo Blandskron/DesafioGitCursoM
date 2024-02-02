@@ -1,3 +1,51 @@
-body{
+body {
     background-image: url(../img/12.png);
+<<<<<<< HEAD
 }
+=======
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    background: url('../img/Image9.png') center/contain no-repeat;
+
+}
+
+.line-container {
+    display: flex;
+    margin: 10px 0; /* Add some space between the lines */
+}
+
+.cara-image,
+.letras-image,
+.jugar-image {
+    max-width: 100%; /* Ensure the image doesn't exceed the parent's width */
+    max-height: 100%; /* Ensure the image doesn't exceed the parent's height */
+    display: block;
+}
+
+.cara-image {
+    margin-right: 10px; /* Add space between the logo images */
+    width: 11vw;
+}
+
+.letras-image {
+    width: 25vw;
+}
+
+.jugar-image {
+    width: 28vw;
+    cursor: pointer;
+}
+>>>>>>> b7815c5f79a487b32348d7e5d5da4171cff5ec83
