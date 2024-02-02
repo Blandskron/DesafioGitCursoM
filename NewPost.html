@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/newpost.css">
     <title>Document</title>
 </head>
+
 <body background="img/13.png"; style="font-family: 'lovelo'; text-align: center;">
     <h1 style="color: rgb(212, 38, 134);">New Post</h1>
     <form>
@@ -17,6 +19,26 @@
       <button type="button" onclick="mostrarAdivinanza()">Mostrar Adivinanza</button>
       <button type="button" onclick="mostrarRespuesta()">Mostrar Respuesta</button>
     </form>
+
+    <aside class="aside-newpost">
+        <img src="img/usuario.png" alt="foto perfil" width="200px" height="200px" id="foto-user">
+        <br><br>
+        <span id="name-user">ELSA YAYIN</span>
+        <br><br>
+        <div id="div-estrellas">
+            <img src="img/estrella.png" alt="estrella" class="estrellas">
+            <img src="img/estrella.png" alt="estrella" class="estrellas">
+        </div>
+        <br>
+        <span id="sec-amigos">AMIGOS</span>
+        <ul class="lista-amigos">
+            <li class="lista-amigos" id="li-1">1</li><br>
+            <li class="lista-amigos" id="li-2">2</li><br>
+            <li class="lista-amigos" id="li-3">3</li><br>
+            <li class="lista-amigos" id="li-4">4</li><br>
+        </ul>
+    </aside>
+
     <script>
       function mostrarAdivinanzayrespuesta() {
         var adivinanza = document.getElementById("adivinanza").value;
@@ -27,7 +49,7 @@
         alert(respuesta);
       }
     </script>
-    
-    
 </body>
 </html>
+
+<!-- Revisar el body, centrando a la pantalla, manteniendo el aside al borde-->
